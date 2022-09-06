@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "stack1.h"
+#include "stack2.h"
 void Display(StackEntry e){
     printf("element is: %d\n", e);
 }
@@ -11,7 +11,7 @@ int main()
     Stack s;
     initializ_Stack(&s);
     while(1){
-        printf(" Enter what you need\n 1.PUSH\n 2.POP\n 3.DISPLAY\n 4.StackTop\n 5.StackSize\n 6. Exit\n");
+        printf(" Enter what you need\n 1.PUSH\n 2.POP\n 3.DISPLAY\n 4.StackTop\n 6. Exit\n");
         scanf("%d",&n);
         switch(n)
         {
@@ -35,12 +35,6 @@ int main()
             case 4:
             {
                 StackTop(&e, &s);
-                break;
-            }
-            case 5:
-            {
-                StackSize(&s);
-
                 break;
             }
             case 6:
